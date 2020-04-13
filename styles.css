@@ -1,13 +1,14 @@
+/*under construction page*/
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 80vh;
+    font-family: sans-serif;
 }
 
 .construction-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     text-align: center;
 }
