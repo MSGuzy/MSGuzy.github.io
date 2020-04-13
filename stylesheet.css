@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.construction-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
