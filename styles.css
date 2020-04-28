@@ -11,39 +11,30 @@ body {
     max-height: 32px;
 }
 
-p {
-    font-family: Raleway;
-}
+
 
 .highlight {
     padding: 16px 40px;
     font-size: 64px;
     background: #455459;
     color: #ffffff;
-    text-decoration-
 }
 
 .highlight b {
     font-weight: 800;
 }
 
-.strikethrough {
-    color: red;
-}
-
-.strikethrough-text {
-    color: red;
-}
-
 .highlight e {
     font-weight: 300;
     margin: 0px 0px;
     padding-bottom: 16px;
-    display: block
+    display: block;
 }
 
 .highlight p {
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 900px !important;
 }
 
 .container {
@@ -258,13 +249,10 @@ p {
     padding-left: 16px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .container {
         grid-template-columns: 1fr 1fr;
     }
-
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -296,7 +284,7 @@ p {
     }
 }
 
-@media screen and (max-width: 260px) {
+@media screen and (max-width: 400px) {
     .container {
         grid-template-columns: 1fr;
     }
@@ -367,6 +355,11 @@ footer {
 #twitter {
     height: 24px;
     width: 24px;
+}
+
+#linkedin {
+    height: 16px;
+    margin: 0px 0px;
 }
 
 #dribbble {
