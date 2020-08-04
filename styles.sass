@@ -1,33 +1,110 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800&display=swap');
 
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
-}
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: #455459;
     margin: 0;
     padding: 0;
+    line-height: 1.65;
 }
 
-.logo-name img {
-    max-height: 32px;
+
+
+$font-base: 1rem;
+$font-scale: 1.5;
+
+$x: 1;
+$y: 6;
+
+@for $x from 1 through 6 {
+    H#{$x} {font-size: $font-base * $font-scale * $y;}
+    $y: $y - 1;
 }
 
-.container {
+
+/*
+p {
+    margin-bottom: 1.15rem;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 2.75rem 0 1.05rem;
+    line-height: 1.15;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 7.594em;
+}
+
+h2 {
+    font-size: 5.063em;
+}
+
+h3 {
+    font-size: 3.375em;
+}
+
+h4 {
+    font-size: 2.25em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+small,
+.text_small {
+    font-size: 0.667em;
+}
+
+Text Styles
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
+
+h1 {
+    font-size: calc(3rem + 8vw);
+}
+h2 {
+    font-size: calc(3rem + 4vw);
+}
+h3 {
+    font-size: calc(1.3rem + 2vw);
+}
+h4 {
+    font-size: calc(1.3rem + 1.6vw);
+}
+h5 {
+    font-size: calc(1.3rem + 1.2vw);
+}
+h6 {
+    font-size: calc(1.3rem + 1vw); 
+}
+*/
+
+.logo-name {
+    height: 24px;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 24px;
-    padding: 40px;
-}
-
-.container h2 {
-    grid-column-end: span 3;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 24px;
+    max-width: 1200px;
 }
 
 .highlight {
@@ -45,7 +122,7 @@ body {
     margin: 0px 0px;
     padding-bottom: 8px;
     display: block;
-    font-size: calc(1.3rem + 4vw);
+    font-size: calc(1.3rem + 3.9vw);
 }
 
 .highlight p {
@@ -88,8 +165,8 @@ body {
 }
 
 .project-logo {
-    max-height: 60px;
-    max-width: calc(100% - 64px);
+    max-height: 40px;
+    m
 }
 
 #objective-box {
@@ -122,7 +199,7 @@ body {
 .main-nav,
 .main-nav ul,
 .main-nav li {
-    height: 32px;
+    height: 32pt;
     display: flex;
     align-items: center
 }
@@ -133,10 +210,9 @@ body {
     transition: 0.2s all;
 }
 
+/*
 . .responsive-logo {
     display: flex;
-    height: 60px;
-    margin: 0px;
     color: #455459;
     justify-content: flex-start;
     width: 100%;
@@ -154,7 +230,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
     padding: 16px;
     z-index: 5;
-}
+}*/
 
 .main-nav ul {
     list-style-type: none;
@@ -164,6 +240,9 @@ body {
     display: flex;
 }
 
+.inner-container {
+    max-width: 1200px;
+}
 
 .project-box a {
     transition-duration: 0.3s;
@@ -251,6 +330,10 @@ body {
     color: #ffffff !important;
 }
 */
+.work-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
 .project-box:hover a,
 .project-box:focus a,
@@ -263,24 +346,61 @@ body {
     padding-left: 16px;
 }
 
+.case-study-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+#objective-box {
+    width: 100%;
+    max-width: 900px;
+}
+
+#team-box {
+    text-align: right;
+}
+
 @media screen and (max-width: 1000px) {
-    .container {
+    .work-container {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .project-box {
+        height: 160px;
+    }
+
+    .project-logo {
+        max-height: 56px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .highlight e {
+        font-size: calc(1.3rem + 2.8vw);
     }
 }
 
 @media screen and (max-width: 600px) {
-    .container {
+    .work-container {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
     }
 
-    .top {
-        flex-direction: row;
+    /*    .top {
+        flex-direction: column;
     }
 
     .top ul {
         margin-top: 8px;
-    }
+    }*/
 
     .logo-name {
         justify-content: center;
@@ -295,21 +415,23 @@ body {
 
     .logo-container {
         flex-direction: row;
+    }
+
+    .highlight b {
+        display: block;
+    }
+
+    .highlight e {
+        font-size: calc(1.3rem + 6vw);
     }
 }
 
 @media screen and (max-width: 400px) {
     .container {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
     }
 
-    .top {
-        flex-direction: column;
-    }
-
-    .top ul {
-        margin-top: 8px;
-    }
 
     .logo-name {
         justify-content: center;
@@ -319,13 +441,24 @@ body {
     }
 
     .logo-name img {
-        max-height: 32px;
+        max-height: 64px;
     }
 
     .logo-container {
         flex-direction: row;
     }
 }
+
+@media screen and (max-width: 200px) {
+    .highlight b {
+        display: block;
+    }
+
+    .highlight e {
+        font-size: calc(1.3rem + 9vw);
+    }
+}
+
 
 #logo-matt {
     padding-right: 8px;
