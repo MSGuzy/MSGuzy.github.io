@@ -1,0 +1,20 @@
+//Main CSS File
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800&display=swap');
+
+/*Base*/
+@import "partials/base/variables";
+@import "partials/base/foundation";
+@import "partials/base/typography";
+@import "partials/base/colors";
+@import "partials/base/header";
+@import "partials/base/flexbox";
+@import "partials/base/footer";
+
+/*Components*/
+
+//Home
+@import "partials/components/highlight";
+@import "partials/components/work";
+
+//Project Page
+@import "partials/components/project";

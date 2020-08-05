@@ -1,0 +1,31 @@
+//Project Page
+
+#objective-box {
+    grid-column-end: span 2;
+    width: 100%;
+    max-width: 900px;
+}
+
+#process-box {
+    grid-column-end: span 3;
+}
+
+#team-box {
+    text-align: right;
+}
+
+.occupation {
+    opacity: 75%;
+}
+
+.case-study-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}

@@ -1,0 +1,89 @@
+//variables
+
+//base
+$content-width: 1200px;
+
+//Typography
+$font-size: 100%;
+$font-scale: 1.2;
+$font-family: 'Montserrat', sans-serif;
+$font-weights: (
+  "light":300,
+  "regular":500,
+  "medium":400,
+  "bold":800
+);
+
+//Primary Color
+$primary-color: #455459;
+/*^Change above^*/
+$primary-100: $primary-color;
+$primary-90: rgba($primary-color, .9);
+$primary-80: rgba($primary-color, .8);
+$primary-70: rgba($primary-color, .7);
+$primary-60: rgba($primary-color, .6);
+$primary-50: rgba($primary-color, .5);
+$primary-40: rgba($primary-color, .4);
+$primary-30: rgba($primary-color, .3);
+$primary-20: rgba($primary-color, .2);
+$primary-10: rgba($primary-color, .1);
+
+//Accent Color
+$accent-color: #123456;
+/*^Change above^*/
+$accent-100: $accent-color;
+$accent-90: rgba($accent-color, .9);
+$accent-80: rgba($accent-color, .8);
+$accent-70: rgba($accent-color, .7);
+$accent-60: rgba($accent-color, .6);
+$accent-50: rgba($accent-color, .5);
+$accent-40: rgba($accent-color, .4);
+$accent-30: rgba($accent-color, .3);
+$accent-20: rgba($accent-color, .2);
+$accent-10: rgba($accent-color, .1);
+
+//Warning Color
+$warning-color: red;
+/*^Change above^*/
+$warning-100: $warning-color;
+$warning-90: rgba($warning-color, .9);
+$warning-80: rgba($warning-color, .8);
+$warning-70: rgba($warning-color, .7);
+$warning-60: rgba($warning-color, .6);
+$warning-50: rgba($warning-color, .5);
+$warning-40: rgba($warning-color, .4);
+$warning-30: rgba($warning-color, .3);
+$warning-20: rgba($warning-color, .2);
+$warning-10: rgba($warning-color, .1);
+
+//Black Color
+$black-color: #455459;
+/*^Change above^*/
+$black-100: $black-color;
+$black-90: rgba($black-color, .9);
+$black-80: rgba($black-color, .8);
+$black-70: rgba($black-color, .7);
+$black-60: rgba($black-color, .6);
+$black-50: rgba($black-color, .5);
+$black-40: rgba($black-color, .4);
+$black-30: rgba($black-color, .3);
+$black-20: rgba($black-color, .2);
+$black-10: rgba($black-color, .1);
+
+//White Color
+$white-color: #ffffff;
+/*^Change above^*/
+$white-100: $white-color;
+$white-90: rgba($white-color, .9);
+$white-80: rgba($white-color, .8);
+$white-70: rgba($white-color, .7);
+$white-60: rgba($white-color, .6);
+$white-50: rgba($white-color, .5);
+$white-40: rgba($white-color, .4);
+$white-30: rgba($white-color, .3);
+$white-20: rgba($white-color, .2);
+$white-10: rgba($white-color, .1);
+
+//Gradients
+$white-gradient: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+$guiltTrip-gradient: linear-gradient(180deg, #5CBBFF 0%, #2F78AE 100%);

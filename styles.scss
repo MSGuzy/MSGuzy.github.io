@@ -1,0 +1,260 @@
+/* url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #455459;
+    margin: 0;
+    padding: 0;
+    line-height: 1.65;
+}
+
+$font-base: 1rem;
+$font-scale: 1.5;
+
+$x: 1;
+$y: 6;
+
+@for $x from 1 through 6 {
+    H#{$x} {font-size: $font-base * $font-scale * $y;}
+    $y: $y - 1;
+}
+
+
+
+p {
+    margin-bottom: 1.15rem;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 2.75rem 0 1.05rem;
+    line-height: 1.15;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 7.594em;
+}
+
+h2 {
+    font-size: 5.063em;
+}
+
+h3 {
+    font-size: 3.375em;
+}
+
+h4 {
+    font-size: 2.25em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+small,
+.text_small {
+    font-size: 0.667em;
+}
+
+Text Styles
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
+
+h1 {
+    font-size: calc(3rem + 8vw);
+}
+h2 {
+    font-size: calc(3rem + 4vw);
+}
+h3 {
+    font-size: calc(1.3rem + 2vw);
+}
+h4 {
+    font-size: calc(1.3rem + 1.6vw);
+}
+h5 {
+    font-size: calc(1.3rem + 1.2vw);
+}
+h6 {
+    font-size: calc(1.3rem + 1vw);
+}
+*/
+
+
+
+
+
+
+
+/*
+. .responsive-logo {
+    display: flex;
+    color: #455459;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.responsive-logo h1 {
+    margin: 0;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    z-index: 5;
+}
+
+
+.inner-container {
+    max-width: 1200px;
+}
+
+
+#veta-health {
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 100%);
+}
+
+#veta-health {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(180deg, #FFF 0%, #FFF 100%), #FFFFFF;
+}
+
+#veta-health::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #9FD47F 0%, #4EB1B9 100%);
+    opacity: 0;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+#veta-health:hover::before,
+#veta-health:hover a {
+    transition: 0.5s opacity ease;
+    opacity: 1;
+    color: #ffffff !important;
+}
+*/
+
+@media screen and (max-width: 810px) {
+    .highlight e {
+        font-size: calc(1.3rem + 2.8vw);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*    .top {
+        flex-direction: column;
+    }
+
+    .top ul {
+        margin-top: 8px;
+    }*/
+
+    .logo-name {
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .logo-name img {
+        max-height: 32px;
+    }
+
+    .logo-container {
+        flex-direction: row;
+    }
+
+    .highlight b {
+        display: block;
+    }
+
+    .highlight e {
+        font-size: calc(1.3rem + 6vw);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+
+    .logo-name {
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .logo-name img {
+        max-height: 64px;
+    }
+
+    .logo-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .highlight b {
+        display: block;
+    }
+
+    .highlight e {
+        font-size: calc(1.3rem + 9vw);
+    }
+}
+
+
+#logo-matt {
+    padding-right: 8px;
+}
+
+
+/*
+#logo-matt::after {
+    content: '';
+    display: block;
+    margin-top: 1.2rem;
+    height: 4px;
+    background: #333;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 2.5%, #FF7025 2.5%, #FF7025 99%, #FFFFFF 99%, #FFFFFF 100%);
+}
+
+.gray #logo-matt::after {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 2.5%, rgba(69, 84, 89, 50%) 2.5%, rgba(69, 84, 89, 50%) 99%, rgba(69, 84, 89, 50%) 99%, rgba(69, 84, 89, 50%) 100%);
+}
+
+.gray #logo-guzy::after {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 62.5px, rgba(69, 84, 89, 50%) 62.5px, rgba(69, 84, 89, 50%) 160px, rgba(255, 255, 255, 0) 160px, rgba(255, 255, 255, 0) 100%);
+}
+
+#logo-guzy::after {
+    content: '';
+    display: block;
+    margin-top: 1.2rem;
+    height: 4px;
+    background: #333;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 62.5px, #FF7025 62.5px, #FF7025 160px, rgba(255, 255, 255, 0) 160px, rgba(255, 255, 255, 0) 100%);
+}
+*/

@@ -1,18 +1,116 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <link rel="stylesheet" href="styles.sass">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 
 <body style="margin: 2em">
+  <div class=top>
+      <!--<div class="responsive-logo">
+          <h1 id="logo-matt">matt</h1>
+          <h1 id="logo-guzy">guzy</h1>
+      </div> -->
+      <div class="responsive-logo" href="./index.html">
+          <img class="logo-name" id="logo-matt" src="Images/matt.png" alt="Matt"></img>
+          <img class="logo-name" id="logo-guzy" src="Images/guzy.png" alt="Guzy"></img>
+      </div>
+      <div class="main-nav">
+          <ul>
+              <li><a href="./index.html#about">About</a></li>
+              <li><a href="./index.html#work">Work</a></li>
+              <li><a href="./resume.html" target="_blank">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+  </div>
     <div>
-        <h1>H1 Longer Header</h1>
+        <h1><span class="bold">H1</span> Longer Header</h1>
         <h2>H2 Longer Header</h2>
         <h3>H3 Longer Header</h3>
         <h4>H4 Longer Header</h4>
         <h5>H5 Longer Header</h5>
         <h6>H6 Longer Header</h6>
-        <p>Paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit pulvinar accumsan. Ut urna urna, consequat ac tellus vitae, scelerisque placerat turpis. Nam efficitur velit lectus, ac molestie nulla iaculis sit amet. Phasellus augue sapien, bibendum at leo pellentesque, vehicula ultricies magna. In rhoncus ornare enim sed facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi suscipit odio ut mauris tristique viverra a sagittis ipsum.</p>
-        <p>Maecenas sem ante, convallis non ipsum vel, blandit ornare orci. Curabitur bibendum tempor dictum. Praesent et faucibus lorem. Cras turpis erat, pellentesque sit amet tortor sed, accumsan tempus neque. Proin posuere urna non nulla cursus, congue elementum dolor condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam eu blandit nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed finibus interdum maximus. Nunc efficitur condimentum quam, vitae dapibus enim molestie non. Fusce vitae congue elit. Maecenas sem velit, vestibulum sollicitudin leo non, tristique porta neque. Nunc dictum porttitor ipsum vel lacinia. Aliquam pretium porttitor rutrum. Quisque ac lectus massa.</p>
+        <p> This page serves as a visual representation of everything available in the design system for this website. It was built with only HTML and SASS/CSS. The source code is available on <a class="coded" target="_blank" href="https://github.com/MSGuzy/MSGuzy.github.io">Github</a>.
+      </div>
+    <div class="flex-row around">
+      <div class="flex-column center">
+        <h5>Main</h5>
+        <div class="bg-primary-100 color-box"></div>
+        <div class="bg-primary-90 color-box"></div>
+        <div class="bg-primary-80 color-box"></div>
+        <div class="bg-primary-70 color-box"></div>
+        <div class="bg-primary-60 color-box"></div>
+        <div class="bg-primary-50 color-box"></div>
+        <div class="bg-primary-40 color-box"></div>
+        <div class="bg-primary-30 color-box"></div>
+        <div class="bg-primary-20 color-box"></div>
+        <div class="bg-primary-10 color-box"></div>
+      </div>
+      <div class="flex-column center">
+        <h5>Accent</h5>
+        <div class="bg-accent-100 color-box"></div>
+        <div class="bg-accent-90 color-box"></div>
+        <div class="bg-accent-80 color-box"></div>
+        <div class="bg-accent-70 color-box"></div>
+        <div class="bg-accent-60 color-box"></div>
+        <div class="bg-accent-50 color-box"></div>
+        <div class="bg-accent-40 color-box"></div>
+        <div class="bg-accent-30 color-box"></div>
+        <div class="bg-accent-20 color-box"></div>
+        <div class="bg-accent-10 color-box"></div>
+      </div>
+      <div class="flex-column center">
+        <h5>Warning</h5>
+        <div class="bg-warning-100 color-box"></div>
+        <div class="bg-warning-90 color-box"></div>
+        <div class="bg-warning-80 color-box"></div>
+        <div class="bg-warning-70 color-box"></div>
+        <div class="bg-warning-60 color-box"></div>
+        <div class="bg-warning-50 color-box"></div>
+        <div class="bg-warning-40 color-box"></div>
+        <div class="bg-warning-30 color-box"></div>
+        <div class="bg-warning-20 color-box"></div>
+        <div class="bg-warning-10 color-box"></div>
+      </div>
+      <div class="flex-column center">
+        <h5>Black</h5>
+        <div class="bg-black-100 color-box"></div>
+        <div class="bg-black-90 color-box"></div>
+        <div class="bg-black-80 color-box"></div>
+        <div class="bg-black-70 color-box"></div>
+        <div class="bg-black-60 color-box"></div>
+        <div class="bg-black-50 color-box"></div>
+        <div class="bg-black-40 color-box"></div>
+        <div class="bg-black-30 color-box"></div>
+        <div class="bg-black-20 color-box"></div>
+        <div class="bg-black-10 color-box"></div>
+      </div>
+      <div class="flex-column center bg-black-100">
+        <h5 class="white-100">White</h5>
+        <div class="bg-white-100 color-box"></div>
+        <div class="bg-white-90 color-box"></div>
+        <div class="bg-white-80 color-box"></div>
+        <div class="bg-white-70 color-box"></div>
+        <div class="bg-white-60 color-box"></div>
+        <div class="bg-white-50 color-box"></div>
+        <div class="bg-white-40 color-box"></div>
+        <div class="bg-white-30 color-box"></div>
+        <div class="bg-white-20 color-box"></div>
+        <div class="bg-white-10 color-box"></div>
+      </div>
+  </div>
+</body>
+<footer>
+    <div class="footerWrapper">
+        <div class="social-icons">
+            <a href="mailto:MSGuzy@gmail.com"><img id="email" src="./Images/Mail.png" alt="Email MSGuzy@Gmail.com" </a>
+                <a href="https://twitter.com/msguzy" target="_blank"><img id="twitter" src="./Images/Logos/twitter-logo.png" alt="Link to Twitter Account"></a>
+                <a href="https://www.linkedin.com/in/msguzy" target="_blank"><img id="linkedin" src="./Images/Logos/linkedin-icon.png" alt="Link to LinkedIn Account"></a>
+                <a href="https://dribbble.com/MSGuzy" target="_blank"><img id="dribbble" src="./Images/Logos/dribbble-icon.png" alt="Link to Dribbble Account"></a>
+        </div>
+        <!--        <span class="divider">|</span>-->
+        <span class ="coded">Handcoded with <a href="./sandbox.html" target="_blank">HTML+CSS</a></span>
     </div>
-</body></html>
+</footer>
+</html>

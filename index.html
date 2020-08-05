@@ -2,7 +2,13 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('#footer').load('footer.html');
+      });
+    </script>
 </head>
 
 <body>
@@ -19,30 +25,31 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="/resume.html" target="_blank">Resume</a></li>
+                <li><a href="./resume.html" target="_blank">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </div>j
+    </div>
     <div id="about" class="highlight">
         <div class="inner-container">
-            <e><b>User</b> obsessed</e>
-            <e><b>Accessibility</b> minded</e>
-            <e><b>Responsively</b> responsible</e>
-            <e><b>Design System</b> enthusiast</e>
+            <h1><b>User</b> obsessed</h1>
+            <h1><b>Accessibility</b> minded</h1>
+            <h1><b>Responsively</b> responsible</h1>
+            <h1><b>Design System</b> enthusiast</h1>
+            <h1><b>Empathy</b> driven</h1>
             <p>I love 8-point soft grids and could talk for hours about the power of Flexbox. And don't get me started on Figma (though I'm comfortable in most design programs, and quick to learn any that I haven't used!)</p>
-            <p>When I'm not designing, you can find me cooking, at a craft brewery with friends or playing strategy board games</p>
+            <p>When I'm not designing, you can find me cooking or playing board games with friends.</p>
         </div>
     </div>
     <div id="work">
         <h2>Work</h2>
         <div class="work-container">
-            <div class="project-box" id="guilttrip"><a href="/under-construction.html"><span><img class="project-logo" src="/Images/Logos/GuiltTrip-logo.png" alt="GuiltTrip Logo"></span></a></div>
-            <div class="project-box" id="veta-health"><a href="/under-construction.html"><span><img class="project-logo" src="/Images/Logos/Veta-Health.png" alt=""></span></a></div>
-            <div class="project-box" id="sous-chef"><a href="/under-construction.html"><span>Sous-Chef</span></a></div>
-            <div class="project-box" id="nest"><a href="/under-construction.html"><span class="logo-container"><img class="project-logo" src="/Images/Logos/nest-logo.png" alt="Nest Logo"><span class="plus">+</span><img class="project-logo" src="/Images/Logos/DirecTV-globe-logo.png" alt="DIRECTV Logo"></span></a></div>
-            <div class="project-box" id="ppp"><a href="/Projects/ppp.html"><span><img class="project-logo" src="/Images/Logos/DirecTV-logo.png" alt="DIRECTV Logo"></span></a></div>
-            <div class="project-box" id="hack"><a href="/Projects/hack.html"><span>H.A.C.K.</span></a></div>
+            <div class="project-box" id="sous-chef"><a href="./Projects/sous-chef.html"><span>Sous-Chef</span></a></div>
+            <div class="project-box" id="veta-health"><a href="./Projects/veta-health.html"><span><img class="project-logo" src="./Images/Logos/Veta-Health.png" alt=""></span></a></div>
+            <div class="project-box" id="guiltTrip"><a href="./Projects/guilttrip.html"><span><img class="project-logo" src="./Images/Logos/GuiltTrip-logo.png" alt="GuiltTrip Logo"></span></a></div>
+            <div class="project-box" id="nest"><a href="./Projects/nest-dre-app.html"><span class="logo-container"><img class="project-logo" src="./Images/Logos/DirecTV-globe-logo.png" alt="DIRECTV Logo"><span class="plus">+</span><img class="project-logo" src="./Images/Logos/nest-logo.png" alt="Nest Logo"></span></a></div>
+            <div class="project-box" id="ppp"><a href="./Projects/ppp.html"><span><img class="project-logo" src="./Images/Logos/DirecTV-logo.png" alt="DIRECTV Logo"></span></a></div>
+            <div class="project-box" id="code-breach"><a href="./Projects/code-breach.html"><span>Code Breach</span></a></div>
         </div>
 
         <!-- Actual Page Links
@@ -55,18 +62,7 @@
     </div>
     <!--
     <div id="contact" class="highlight">Contact Form</div>-->
+    <div id="footer"></div>
 </body>
-<footer>
-    <div class="footerWrapper">
-        <div class="social-icons">
-            <a href="mailto:MSGuzy@gmail.com"><img id="email" src="/Images/Mail.png" alt="Email MSGuzy@Gmail.com" </a>
-                <a href="https://twitter.com/msguzy" target="_blank"><img id="twitter" src="/Images/Logos/twitter-logo.png" alt="Link to Twitter Account"></a>
-                <a href="https://www.linkedin.com/in/msguzy" target="_blank"><img id="linkedin" src="/Images/Logos/linkedin-icon.png" alt="Link to LinkedIn Account"></a>
-                <a href="https://dribbble.com/MSGuzy" target="_blank"><img id="dribbble" src="/Images/Logos/dribbble-icon.png" alt="Link to Dribbble Account"></a>
-        </div>
-        <!--        <span class="divider">|</span>-->
-        <div class="coded">Handcoded with HTML+CSS</div>
-    </div>
-</footer>
-
+<div id="Footer"></div>
 </html>
