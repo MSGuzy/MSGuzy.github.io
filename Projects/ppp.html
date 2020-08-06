@@ -1,22 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $("#footer").load("./footer.html");
+        $("#header").load("./header.html");
+      });
+    </script>
+    <div id="header"></div>
 </head>
 
 <body>
-    <h1>Protection Plan Premier Research</h1>
-    <div class="container case-study-container">
-        <div class="section" id="objective-box">
-            <h2>Objective/Goals</h2>
-            <p>Project goals go here</p>
-        </div>
-        <div class="section" id="team-box">
-            <h2>Team</h2>
-            <p><b>Matt Guzy:</b> Role | Role 2</p>
-            <p><b>Name 2:</b> Role</p>
-            <p><b>Name 3:</b> Role</p>
-            <p><b>Name 4:</b> Role | Role 2</p>
+    <div class="case-study-container">
+        <h1>PPP</h1>
+        <div class="intro-box">
+            <div class="section" id="objective-box">
+                <h2>Objective/Goals</h2>
+                <p>Project goals go here</p>
+            </div>
+            <div class="section" id="team-box">
+                <h2>Team</h2>
+                <p><b>Matt Guzy:</b> Role | Role 2</p>
+                <p><b>Name 2:</b> Role</p>
+                <p><b>Name 3:</b> Role</p>
+                <p><b>Name 4:</b> Role | Role 2</p>
+            </div>
         </div>
         <div class="section" id="process-box">
             <h2>Process</h2>
@@ -36,4 +46,8 @@
             </ul>
         </div>
     </div>
-</body></html>
+</body>
+<footer>
+  <div id="footer"></div>
+</footer>
+</html>

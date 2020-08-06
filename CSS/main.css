@@ -688,6 +688,9 @@ em, h1 b {
   text-transform: lowercase;
   font-size: calc(1rem + 0.5vw); }
 
+.responsive-logo {
+  height: 32px; }
+
 .main-nav,
 .main-nav ul,
 .main-nav li {

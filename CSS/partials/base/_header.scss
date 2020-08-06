@@ -20,14 +20,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 40px;
-    background: #ffffff;
+    background: $white-100;
 }
 
 #header a {
     text-decoration: none;
-    color: #455459;
+    color: $primary-100;
     text-transform: lowercase;
     font-size: calc(1rem + 0.5vw);
+}
+
+.responsive-logo {
+  height: 32px;
 }
 
 .main-nav,
