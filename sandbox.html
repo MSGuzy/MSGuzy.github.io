@@ -3,6 +3,14 @@
 <html>
 <head>
     <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $("#footer").load("./footer.html");
+        $("#header").load("./header.html");
+      });
+    </script>
+    <div id="header"></div>
 </head>
 
 <body style="margin: 2em">
@@ -102,15 +110,6 @@
   </div>
 </body>
 <footer>
-    <div class="footerWrapper">
-        <div class="social-icons">
-            <a href="mailto:MSGuzy@gmail.com"><img id="email" src="./Images/Mail.png" alt="Email MSGuzy@Gmail.com" </a>
-                <a href="https://twitter.com/msguzy" target="_blank"><img id="twitter" src="./Images/Logos/twitter-logo.png" alt="Link to Twitter Account"></a>
-                <a href="https://www.linkedin.com/in/msguzy" target="_blank"><img id="linkedin" src="./Images/Logos/linkedin-icon.png" alt="Link to LinkedIn Account"></a>
-                <a href="https://dribbble.com/MSGuzy" target="_blank"><img id="dribbble" src="./Images/Logos/dribbble-icon.png" alt="Link to Dribbble Account"></a>
-        </div>
-        <!--        <span class="divider">|</span>-->
-        <span class ="coded">Handcoded with <a href="./sandbox.html" target="_blank">HTML+CSS</a></span>
-    </div>
+  <div id="footer"></div>
 </footer>
 </html>
