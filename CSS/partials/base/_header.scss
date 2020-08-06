@@ -15,7 +15,7 @@
     }
 }
 
-.top {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@
     background: #ffffff;
 }
 
-.top a {
+#header a {
     text-decoration: none;
     color: #455459;
     text-transform: lowercase;
