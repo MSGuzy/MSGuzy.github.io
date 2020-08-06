@@ -8,6 +8,9 @@
 .inner-container {
   max-width: 1200px; }
 
+body {
+  margin: 0; }
+
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
@@ -694,7 +697,7 @@ em, h1 b {
 
 .main-nav ul li:hover a {
   background-color: #455459;
-  color: #ffffff;
+  color: #ffffff !important;
   transition: 0.2s all; }
 
 .main-nav ul {
