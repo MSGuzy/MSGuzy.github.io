@@ -13,23 +13,27 @@
   "author": "Matt Guzy",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.12",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
     "browserslist": [
-    	"> 1%",
-    	"ie >= 8",
-    	"edge >= 15",
-    	"ie_mob >= 10",
-    	"ff >= 45",
-    	"chrome >= 45",
-    	"safari >= 7",
-    	"opera >= 23",
-    	"ios >= 7",
-    	"android >= 4",
-    	"bb >= 10"
-  ],
+      "> 1%",
+      "ie >= 8",
+      "edge >= 15",
+      "ie_mob >= 10",
+      "ff >= 45",
+      "chrome >= 45",
+      "safari >= 7",
+      "opera >= 23",
+      "ios >= 7",
+      "android >= 4",
+      "bb >= 10"
+    ],
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
   }
 }

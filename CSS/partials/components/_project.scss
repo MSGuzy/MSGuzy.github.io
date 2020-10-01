@@ -1,31 +1,49 @@
 //Project Page
 
-#objective-box {
-    grid-column-end: span 2;
-    width: 100%;
-    max-width: 900px;
+#intro-box {
+  display: flex;
+  flex-row: row;
+  justify-content: space-between;
+  @media screen and (max-width:800px) {
+    flex-direction: column;
+  }
 }
 
-#process-box {
-    grid-column-end: span 3;
+#objective-box {
+    max-width: calc(100% / 3 * 2);
 }
 
 #team-box {
     text-align: right;
+    @media screen and (max-width:800px) {
+      text-align: left;
+    }
+    & ul {
+      list-style: none;
+    }
+    & li {
+      line-height: 150%;
+      font-weight: map-get($font-weights, light);
+    }
+    & b {
+      font-weight: map-get($font-weights, medium);
+    }
 }
 
-.occupation {
-    opacity: 75%;
+.bullets{
+  list-style: none;
+  line-height:150%;
+  margin: 0px;
+  padding: 0px;
 }
 
-.case-study-container {
-    display: flex;
-    flex-direction: column;
+.bullets li{
+  padding-bottom: 8px;
 }
 
-.intro-box {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: row;
+.bullets li:before{
+  content: "\2022";
+  color: $primary-50;
+  margin-right: 4px;
+  margin-left: -8px;
 }

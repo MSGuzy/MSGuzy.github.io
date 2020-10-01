@@ -12,50 +12,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $font-size * ($font-scale * 5);
-  font-weight: map-get($font-weights, light);
+  font-size: $font-size * ($font-scale * 3);
+  margin-bottom: 8px;
+  font-weight: map-get($font-weights, medium);
   b {
     @extend em;
   }
 }
 
 h2 {
-  font-size: $font-size * ($font-scale * 4);
-  font-weight: map-get($font-weights, medium);
+  font-size: $font-size * ($font-scale * 1.5);
+  font-weight: map-get($font-weights, bold);
+  margin: 8px 0px 16px 0px;
 }
 
 h3 {
-  font-size: $font-size * ($font-scale * 3);
+  font-size: $font-size * ($font-scale * 1);
+  font-weight: map-get($font-weights, medium);
+  margin: 16px 0px 8px 0px;
 }
 
+//only use three heading styles
 h4 {
-  font-size: $font-size * ($font-scale * 2);
+  @extend h3;
 }
 
 h5 {
-  font-size: $font-size * ($font-scale * 1);
+  @extend h3;
 }
 
 h6 {
-  font-size: $font-size;
+  @extend h3;
 }
 
 p {
   font-size: $font-size;
   font-weight: map-get($font-weights, regular);
   line-height: 150%;
+  margin: 8px 0px 8px;
 }
 
 em {
   font-weight: map-get($font-weights, bold);
   font-style: normal;
-}
-
-.coded a {
-  color: $primary-100;
-  &:hover {
-    background: $primary-100;
-    color: $white-100;
-    text-decoration: none
-  }
 }

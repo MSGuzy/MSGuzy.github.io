@@ -1,11 +1,12 @@
 //variables
 
 //base
-$content-width: 1200px;
+$content-width: 1100px;
+$global-margin: 40px;
 
 //Typography
-$font-size: 100%;
-$font-scale: 1.2;
+$font-size: 115%;
+$font-scale: 1.25;
 $font-family: 'Montserrat', sans-serif;
 $font-weights: (
   "light":300,
@@ -14,9 +15,14 @@ $font-weights: (
   "bold":800
 );
 
-//Primary Color
+//Set Colors
 $primary-color: #455459;
-/*^Change above^*/
+$accent-color: #123456;
+$warning-color: red;
+$black-color: #455459;
+$white-color: #ffffff;
+
+/*Color Helpers DO NOT TOUCH*/
 $primary-100: $primary-color;
 $primary-90: rgba($primary-color, .9);
 $primary-80: rgba($primary-color, .8);
@@ -29,8 +35,6 @@ $primary-20: rgba($primary-color, .2);
 $primary-10: rgba($primary-color, .1);
 
 //Accent Color
-$accent-color: #123456;
-/*^Change above^*/
 $accent-100: $accent-color;
 $accent-90: rgba($accent-color, .9);
 $accent-80: rgba($accent-color, .8);
@@ -43,8 +47,6 @@ $accent-20: rgba($accent-color, .2);
 $accent-10: rgba($accent-color, .1);
 
 //Warning Color
-$warning-color: red;
-/*^Change above^*/
 $warning-100: $warning-color;
 $warning-90: rgba($warning-color, .9);
 $warning-80: rgba($warning-color, .8);
@@ -57,8 +59,6 @@ $warning-20: rgba($warning-color, .2);
 $warning-10: rgba($warning-color, .1);
 
 //Black Color
-$black-color: #455459;
-/*^Change above^*/
 $black-100: $black-color;
 $black-90: rgba($black-color, .9);
 $black-80: rgba($black-color, .8);
@@ -71,8 +71,6 @@ $black-20: rgba($black-color, .2);
 $black-10: rgba($black-color, .1);
 
 //White Color
-$white-color: #ffffff;
-/*^Change above^*/
 $white-100: $white-color;
 $white-90: rgba($white-color, .9);
 $white-80: rgba($white-color, .8);

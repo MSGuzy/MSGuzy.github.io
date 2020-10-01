@@ -1,26 +1,31 @@
 'use strict'
 
-var gulp = require('gulp')
-var sass = require('gulp-sass')
-var sourcemaps = require('gulp-sourcemaps')
-var autoprefixer = require('gulp-autoprefixer')
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
+var browserSync = require('browser-sync').create();
+//compile scss into css
+function style() {
+    return gulp.src('./CSS/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer() ]))
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
+}
+function watch() {
+    browserSync.init({
+        server: {
+           baseDir: "./",
+           index: "./index.html"
+        }
+    });
+    gulp.watch('./CSS/**/*.scss', style)
+    gulp.watch('./**/*.html').on('change',browserSync.reload);
+    gulp.watch('./**/*.js').on('change', browserSync.reload);
+}
 
-gulp.task('workflow', function (done) {
-    gulp
-        .src('./CSS/**/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(
-            autoprefixer({
-                cascade: false,
-            }),
-        )
-        .pipe(sourcemaps.write('./'))
-
-        .pipe(gulp.dest('./CSS/'))
-	done();
-})
-
-gulp.task('default', function () {
-    gulp.watch('./CSS/**/*.scss', gulp.series('workflow'))
-})
+exports.style = style;
+exports.watch = watch;
