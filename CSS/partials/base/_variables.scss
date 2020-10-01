@@ -33,6 +33,7 @@ $primary-40: rgba($primary-color, .4);
 $primary-30: rgba($primary-color, .3);
 $primary-20: rgba($primary-color, .2);
 $primary-10: rgba($primary-color, .1);
+$primary-05: rgba($primary-color, .05);
 
 //Accent Color
 $accent-100: $accent-color;
@@ -45,6 +46,7 @@ $accent-40: rgba($accent-color, .4);
 $accent-30: rgba($accent-color, .3);
 $accent-20: rgba($accent-color, .2);
 $accent-10: rgba($accent-color, .1);
+$accent-05: rgba($accent-color, .05);
 
 //Warning Color
 $warning-100: $warning-color;
@@ -57,6 +59,7 @@ $warning-40: rgba($warning-color, .4);
 $warning-30: rgba($warning-color, .3);
 $warning-20: rgba($warning-color, .2);
 $warning-10: rgba($warning-color, .1);
+$warning-05: rgba($warning-color, .05);
 
 //Black Color
 $black-100: $black-color;
@@ -69,6 +72,7 @@ $black-40: rgba($black-color, .4);
 $black-30: rgba($black-color, .3);
 $black-20: rgba($black-color, .2);
 $black-10: rgba($black-color, .1);
+$black-05: rgba($black-color, .05);
 
 //White Color
 $white-100: $white-color;
@@ -81,7 +85,9 @@ $white-40: rgba($white-color, .4);
 $white-30: rgba($white-color, .3);
 $white-20: rgba($white-color, .2);
 $white-10: rgba($white-color, .1);
+$white-05: rgba($white-color, .05);
 
 //Gradients
 $white-gradient: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
 $guiltTrip-gradient: linear-gradient(180deg, #5CBBFF 0%, #2F78AE 100%);
+$veta-health-gradient: linear-gradient(90deg, #9FD47F 0%, #4EB1B9 100%);

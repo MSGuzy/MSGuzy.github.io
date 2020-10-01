@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6, h4, h5, h6 {
   padding: 0; }
 
 h1 {
-  font-size: 431.25%;
+  font-size: 359.375%;
   margin-bottom: 8px;
   font-weight: 400; }
 
@@ -67,13 +67,13 @@ h2 {
 h3, h4, h5, h6 {
   font-size: 143.75%;
   font-weight: 400;
-  margin: 16px 0px 8px 0px; }
+  margin: 0px 0px 0px 0px; }
 
 p {
   font-size: 115%;
   font-weight: 500;
   line-height: 150%;
-  margin: 8px 0px 8px; }
+  margin: 8px 0px 16px; }
 
 em, h1 b {
   font-weight: 800;
@@ -853,7 +853,6 @@ footer {
 .work-container {
   display: grid;
   grid-gap: 24px;
-  padding-bottom: 24px;
   max-width: 1100px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; }
@@ -871,27 +870,20 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 2px 4px rgba(25, 25, 25, 0);
+  /*border: 1px solid lightgray;
+    box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.25);*/
   height: 200px;
   font-size: 2.5rem;
   text-align: center;
   border-radius: 8px;
-  background: #ffffff;
-  /*
-    &:hover  {
-      //use sass variable gradient colors?
-      box-shadow: 0px 4px 8px rgba(25, 25, 25, 0.35);
-    }
-    &:active {
-      filter: brightness(98%);
-      box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.35);
-    } */ }
-  .project-box::after {
-    box-shadow: 0px 4px 8px rgba(25, 25, 25, 0.35);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out; }
-  .project-box:hover::after {
-    opacity: 1; }
+  background: #ffffff; }
+  .project-box:hover {
+    /*use sass variable gradient colors?*/
+    background-color: rgba(69, 84, 89, 0.05); }
+  .project-box:active {
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
+    background-color: rgba(69, 84, 89, 0.1); }
   @media screen and (max-width: 1000px) {
     .project-box {
       height: 200px; } }
@@ -899,18 +891,14 @@ footer {
 .project-box .project-logo {
   -webkit-filter: contrast(0);
           filter: contrast(0);
-  transition: all 0.3s;
   margin: 20px 16px 16px 16px; }
 
 .project-box .project-name {
   -webkit-filter: contrast(0);
           filter: contrast(0);
-  transition: all 0.3s;
   margin: 14px 16px 16px 16px; }
 
 .project-box a {
-  transition-duration: 0.3s;
-  transition-property: transform;
   height: 100%;
   width: 100%;
   display: flex;
@@ -927,14 +915,8 @@ footer {
 .project-box:hover a,
 .project-box:focus a,
 .project-box:active a {
-  transition: 0.3s all ease;
   -webkit-filter: contrast(1);
           filter: contrast(1); }
-
-.project-box:hover a,
-.project-box:focus a,
-.project-box:active a {
-  transform: translateY(-4px); }
 
 .logo-container {
   display: flex;
@@ -966,8 +948,8 @@ footer {
 #guiltTrip::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  bottom: 0px;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, #5CBBFF 0%, #2F78AE 100%);
@@ -976,12 +958,34 @@ footer {
   border-radius: 8px; }
 
 #guiltTrip:hover::before {
-  transition: 0.3s opacity ease;
   opacity: 1;
   color: #ffffff; }
 
 #veta-health .project-logo {
-  max-width: 75%; }
+  max-width: 75%;
+  -webkit-filter: contrast(1);
+          filter: contrast(1); }
+
+#veta-health {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%); }
+
+#veta-health::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #9FD47F 0%, #4EB1B9 100%);
+  opacity: 0;
+  z-index: -1;
+  border-radius: 8px; }
+
+#veta-health:hover::before {
+  opacity: 1;
+  color: #ffffff; }
 
 #intro-box {
   display: flex;
