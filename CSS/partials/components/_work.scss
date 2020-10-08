@@ -42,21 +42,18 @@
   font-size: 2.5em;
   text-align: center;
   border-radius: 0.5em;
-  //transition-duration: 0.3s all;
-  background: $white-100;
-
+  filter: contrast(0) brightness(1.5);
   &:hover {
     /*use sass variable gradient colors?*/
-    background-color: $black-05;
+    background-color: $black-10;
     //box-shadow: 0px 4px 0.5em rgba(25, 25, 25, 0.35);
+    filter: none;
     & .project-name {
-      filter: contrast(1);
     }
   }
 
   &:active {
-    filter: brightness(90%);
-    background-color: $black-10;
+    background-color: $black-20;
     //box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.35);
   }
   @media screen and (max-width: 68em) {
@@ -69,13 +66,11 @@
 }
 
 .project-box .project-logo {
-  filter: contrast(0);
   //transition: all 0.3s;
   //margin: 20px 1em 1em;
 }
 
 .project-box .project-name {
-  filter: contrast(0);
   font-weight: map-get($font-weights, medium);
   font-size: $font-size * ($font-scale * 3);
   @media screen and (min-width: 50em){
@@ -94,7 +89,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #455459;
+  color: #fff;
   filter: contrast(0);
 }
 
@@ -134,64 +129,26 @@
   max-height: 1.5em;
   max-width: 75%;
 }
-
-#guiltTrip {
-  position: relative;
-  z-index: 1;
-  background: $white-gradient;
-}
-
-#guiltTrip::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: $guiltTrip-gradient;
-  opacity: 0;
-  z-index: -1;
-  border-radius: 0.5em;
-}
-
-#guiltTrip:hover::before {
-  //transition: 0.3s opacity ease;
-  opacity: 1;
-  color: #ffffff;
-}
-
-#veta-health .project-logo, #sous-chef .project-logo {
-  max-width: 75%;
-  filter: contrast(1);
-}
-
-#veta-health {
-  position: relative;
-  z-index: 1;
-  background: $white-gradient;
-}
-
-#veta-health::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: $veta-health-gradient;
-  opacity: 0;
-  z-index: -1;
-  border-radius: 0.5em;
-}
-
-#veta-health:hover::before {
-  //transition: 0.3s opacity ease;
-  opacity: 1;
-  color: #ffffff;
-}
+//
+// #guiltTrip {
+//   position: relative;
+//   z-index: 1;
+// }
+//
+// #guiltTrip::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 100%;
+//   opacity: 0;
+//   z-index: -1;
+//   border-radius: 0.5em;
+// }
 
 #code-breach:hover {
-  background-image: url("/Images/projects/code-breach/card-background.png");
+  background-image: url("/Images/projects/code-breach/card-background-transparent.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -199,5 +156,5 @@
 
 #code-breach:hover a span {
   color: #ffffff;
-  background-color: rgba(47, 47, 47, 0.75);
+  background-color: rgba(47, 47, 47, 0.4);
 }
