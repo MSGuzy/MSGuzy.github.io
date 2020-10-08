@@ -919,15 +919,16 @@ footer {
 .divider {
   margin: 0 1em; }
 
+@media screen and (min-width: 50em) {
+  .coded {
+    font-size: 1.4rem; } }
+
 .coded a {
   color: #455459; }
   .coded a:hover {
     background: #455459;
     color: #ffffff;
     text-decoration: none; }
-  @media screen and (min-width: 50em) {
-    .coded a {
-      font-size: 1.4rem; } }
 
 /*Components*/
 #work {
