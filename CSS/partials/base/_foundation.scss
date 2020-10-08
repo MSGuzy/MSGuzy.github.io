@@ -58,6 +58,7 @@ body {
 
 .fit-width {
   max-width: unquote("min(65ch, 100%)");
+  margin:32px auto;
 }
 //highlight
 .highlight {

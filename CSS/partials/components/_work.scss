@@ -108,7 +108,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     max-width: 75%;
   }
 }
@@ -121,18 +121,6 @@
 
 .project-logo {
   max-height: 48px;
-}
-
-div#sous-chef {
-  @media screen and (max-width: 1099px) {
-    order: -1;
-  }
-}
-
-div#code-breach {
-  @media screen and (max-width: 1099px) {
-    order: 10;
-  }
 }
 
 #guiltTrip {
@@ -160,7 +148,7 @@ div#code-breach {
   color: #ffffff;
 }
 
-#veta-health .project-logo {
+#veta-health .project-logo, #sous-chef .project-logo {
   max-width: 75%;
   filter: contrast(1);
 }

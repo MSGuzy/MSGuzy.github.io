@@ -48,7 +48,8 @@ body {
   margin: 32px auto; }
 
 .fit-width {
-  max-width: min(65ch, 100%); }
+  max-width: min(65ch, 100%);
+  margin: 32px auto; }
 
 .highlight {
   background: #455459;
@@ -1030,7 +1031,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .logo-container {
       max-width: 75%; } }
 
@@ -1041,14 +1042,6 @@ footer {
 
 .project-logo {
   max-height: 48px; }
-
-@media screen and (max-width: 1099px) {
-  div#sous-chef {
-    order: -1; } }
-
-@media screen and (max-width: 1099px) {
-  div#code-breach {
-    order: 10; } }
 
 #guiltTrip {
   position: relative;
@@ -1071,7 +1064,7 @@ footer {
   opacity: 1;
   color: #ffffff; }
 
-#veta-health .project-logo {
+#veta-health .project-logo, #sous-chef .project-logo {
   max-width: 75%;
   -webkit-filter: contrast(1);
           filter: contrast(1); }
