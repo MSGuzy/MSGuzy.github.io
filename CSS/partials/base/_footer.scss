@@ -5,7 +5,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 1em;
-  margin: 3em 0em;
+  margin: 2em 0em 2.8em;
 }
 
 #footer {
@@ -17,12 +17,11 @@ footer {
 .social-icons {
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
 }
 
 .social-icons a {
   filter: contrast(0);
-  margin: 0 2em;
+  padding: 1em;
 }
 
 .social-icons a:hover {
@@ -31,8 +30,8 @@ footer {
 }
 
 #email {
-  height: 2em;
-  width: 2em;
+  height: 1.8em;
+  width: 1.8em;
 }
 
 #twitter {
@@ -41,7 +40,7 @@ footer {
 }
 
 #linkedin {
-  height: 1.5em;
+  height: 1.4em;
   margin: 0;
 }
 
@@ -51,7 +50,7 @@ footer {
 }
 
 .divider {
-  margin: 0 4em;
+  margin: 0 3em;
 }
 
 .coded {
