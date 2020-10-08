@@ -11,20 +11,25 @@
 
 .work-container {
   display: grid;
-  grid-gap: 8px;
+  grid-gap: 0.5em;
+  width: calc(100% - 4em);
   max-width: $content-width;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  @media screen and (max-width: 1099px) {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  padding: 0 2em;
+
+  @media screen and (min-width: 50em) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 0 0 8px;
+    margin-bottom:0.5em;
+    width: auto;
   }
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    margin-bottom: 0;
+  @media screen and (min-width: 75em) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: auto;
   }
+
 }
 
 .project-box {
@@ -33,17 +38,17 @@
   align-items: center;
   /*border: 1px solid lightgray;
     box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.25);*/
-  height: 224px;
-  font-size: 2.5rem;
+  height: 6em;
+  font-size: 2.5em;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 0.5em;
   //transition-duration: 0.3s all;
   background: $white-100;
 
   &:hover {
     /*use sass variable gradient colors?*/
     background-color: $black-05;
-    //box-shadow: 0px 4px 8px rgba(25, 25, 25, 0.35);
+    //box-shadow: 0px 4px 0.5em rgba(25, 25, 25, 0.35);
     & .project-name {
       filter: contrast(1);
     }
@@ -54,11 +59,11 @@
     background-color: $black-10;
     //box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.35);
   }
-  @media screen and (max-width: 1099px) {
-    height: 176px;
+  @media screen and (max-width: 68em) {
+    //height: 5em;
   }
-  @media screen and (max-width: 768px) {
-    height: 144px;
+  @media screen and (max-width: 48em) {
+    //height: 5em;
     width: 100%;
   }
 }
@@ -66,13 +71,18 @@
 .project-box .project-logo {
   filter: contrast(0);
   //transition: all 0.3s;
-  margin: 20px 16px 16px;
+  //margin: 20px 1em 1em;
 }
 
 .project-box .project-name {
   filter: contrast(0);
+  font-weight: map-get($font-weights, medium);
+  font-size: $font-size * ($font-scale * 3);
+  @media screen and (min-width: 50em){
+    font-size: $font-size * ($font-scale * 2);
+  }
   //transition: all 0.3s;
-  margin: 14px 16px 16px;
+  //margin: 14px 1em 1em;
 }
 
 .project-box a {
@@ -108,19 +118,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 48em) {
+    max-height: 15.5em;
     max-width: 75%;
   }
 }
 
 .plus {
-  margin: 4px 8px -4px;
-  font-size: 2rem;
+  margin: 4px 0.25em -4px;
+  font-size: 1.5em;
   font-weight: 300;
 }
 
 .project-logo {
-  max-height: 48px;
+  max-height: 1.5em;
+  max-width: 75%;
 }
 
 #guiltTrip {
@@ -139,7 +151,7 @@
   background: $guiltTrip-gradient;
   opacity: 0;
   z-index: -1;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 #guiltTrip:hover::before {
@@ -169,7 +181,7 @@
   background: $veta-health-gradient;
   opacity: 0;
   z-index: -1;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 #veta-health:hover::before {

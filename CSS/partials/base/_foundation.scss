@@ -18,24 +18,25 @@ body {
   flex-flow: column;
   justify-content: flex-start;
   align-self: center;
-  @media screen and (max-width: $content-width + ($global-margin * 2)) {
-    margin: 0 $global-margin;
-  }
-  margin-bottom: 8px;
+  // @media screen and (max-width: $content-width + ($global-margin * 2)) {
+     padding: 1em 2em;
+  // }
+
+  margin-bottom: 0.5em;
 }
 
-.section {
-  width: 100%;
-
-  & > .inner-container {
-    max-width: $content-width;
-  }
-}
+// .section {
+//   width: 100%;
+//   & > .inner-container {
+//     max-width: $content-width;
+//   }
+// }
 //wrapper with full width option
 .wrapper {
-  //padding: 32px;
+  //padding: 2em;
   display: grid;
-  grid-template-columns: 1fr unquote("min(65ch, 100%)") 1fr;
+  grid-template-columns: 1fr unquote("min(85ch, 100%)") 1fr;
+  padding: 1em 2em;
 }
 //set items into middle grid section
 .wrapper > * {
@@ -43,28 +44,27 @@ body {
 }
 
 .full-width {
-  width: 100%;
+  width: calc(100% + 4em);
   grid-column: 1 / 4;
   padding: 0;
-  margin: 0;
+  margin: 0 -2em;
 }
 
 .almost-full-width {
   width: 100%;
   grid-column: 1 / 4;
-  max-width: 1200px;
-  margin: 32px auto;
+  max-width: $content-width;
+  margin: 2em auto;
 }
 
 .fit-width {
   max-width: unquote("min(65ch, 100%)");
-  margin:32px auto;
+  margin:2em auto;
 }
 //highlight
 .highlight {
   background: $primary-100;
   color: $white-100;
-  padding: 24px 0px;
 }
 
 figure img {
@@ -78,7 +78,7 @@ figcaption {
 #about h1 {
   font-weight: 300;
   line-height: 90%;
-  margin-bottom: 24px;
+  margin-bottom: 0.5em;
   display: block;
   //font-size: calc(1.3rem + 3.9vw);
   b {
@@ -126,15 +126,15 @@ figcaption {
 
   &.center {
     align-items: center;
-    padding: 8px;
+    padding: 0.5em;
   }
 }
 //two-column-grid
 .two-column-grid {
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 1.5em;
   grid-template-columns: 1fr 1fr;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 48em) {
     grid-template-columns: 1fr;
   }
 }

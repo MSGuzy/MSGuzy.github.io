@@ -1,17 +1,21 @@
 //Project Page
-/*
+
 #intro-box {
-  display: flex;
-  flex-row: row;
-  justify-content: space-between;
-  @media screen and (max-width:800px) {
+  @media screen and (max-width:68em) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-direction: column;
+    & h2 {
+      margin: 0.5em 0;
+    }
   }
 }
 
-#objective-box {
-    max-width: calc(100% / 3 * 2);
-} */
+#objective-box p {
+  margin-bottom: 0.5em;
+}
+
 #team-box {
   //text-align: right;
   @media screen and (max-width:800px) {
@@ -21,14 +25,14 @@
   & ul {
     list-style: none;
     padding-left: 0;
-    margin: 8px 0;
+    margin: 0.5em 0;
   }
 
   & li {
-    line-height: 150%;
-    font-size: $font-size;
+    line-height: 1.5;
+    font-size: 1em * $font-scale;
     font-weight: map-get($font-weights, light);
-    white-space: nowrap;
+    //white-space: pre;
   }
 
   & b {
@@ -46,13 +50,13 @@
   font-style: normal;
   display: none;
   background: $white-100;
-  border-radius: 8px;
+  border-radius: 0.5em;
   color: $black-100;
-  padding: 8px;
-  margin-left: 8px;
+  padding: 0.5em;
+  margin-left: 0.5em;
   margin-top: -4px;
   font-size: 75%;
-  box-shadow: 0px 2px 4px rgba(0,0,0,.25)
+  box-shadow: 0 2px 4px rgba(0,0,0,.25);
 }
 
 .mise:hover::after {
