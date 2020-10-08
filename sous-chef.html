@@ -15,41 +15,86 @@
 
 <body>
   <div class="section highlight">
-    <div class="inner-container">
+    <div class="wrapper">
       <h1>Sous-Chef</h1>
-      <div id="intro-box">
+      <div class="two-column-grid" id="intro-box">
         <div id="objective-box">
-          <h2>Objective/Goals</h2>
-          <p>Project goals go here</p>
+          <h2>Objective</h2>
+        <p>Create a recipe product for home chefs that don't prepare their <span class="mise">mise en place</span> ahead of time.</p>
         </div>
         <div id="team-box">
           <h2>Team</h2>
           <ul>
-            <li><b>Matt Guzy:</b> Role | Role 2</li>
-            <li><b>Name 2:</b> Role</li>
-            <li><b>Name 3:</b> Role</li>
-            <li><b>Name 4:</b> Role | Role 2</li>
+            <li><b>Matt Guzy:</b> Design | Research | Brand</li>
+            <li><b>Steven Buchko:</b> Developer</li>
             <ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="section">
-    <div class="inner-container">
-      <h2>Process</h2>
-      <h3>Research</h3>
-      <p>Research information</p>
-      <h3>Design</h3>
-      <p>Design information</p>
-      <h3>Testing</h3>
-      <p>Testing information</p>
-      <h2>Outcomes</h2>
-      <ul class=bullets>
-        <li>Outcome 1</li>
-        <li>Outcome 2</li>
-        <li>Outcome 3</li>
-      </ul>
-    </div>
+  <div class="wrapper">
+    <h2>Problem</h2>
+    <p>I love to cook and especially love experimenting with new recipes. In a standard recipe layout, ingredient measurements are listed at the top with the
+      instructions
+      below it. When printed or viewed on a larger screen, it is easy enough to glance back and forth. However, if following along on a phone, the small screen forces you to have to scroll back and forth to view the measurements for each
+      ingredient
+      and the instructions. Trying to scroll with dirty hands has become a pain point for me. I want to improve the experience of following a recipe on a mobile device.</p>
+      
+    <p>Often, I get excited about the initial solutions that pop into my head. Something I find helpful in my process, instead of trying to ignore those solutions, is to quickly sketch or mock up the ideas. After researching and more ideation, I will
+      come back to my original ideas and evaluate their value. Rather than trying to repress the idea, this process helps me keep an open mind as the project moves forward.</p>
+    <img class="fit-width" src="./images/projects/sous-chef/Lock-Screen-Notification-Collapsed.jpg" alt="Android media notification solution">
+    <p>My initial idea centered around a media styled notification to parse through a recipe while the phone is locked.</p>
+
+    <h2>Research</h2>
+    <p>I conducted a survey with 100 participants to learn about others’ frustrations. I gathered key insight that is guiding the early stages of the project. Major opportunity areas include:</p>
+    <h3>Opportunity Areas</h3>
+    <h4>Layout</h4>
+    <ul class="quotes">
+      <li>“Some sites make it difficult to view the whole recipe, or are poorly designed with floating ads that block information”</li>
+      <li>“Blog posts have too much wording. I have to scroll all the way down to finally get to the ingredients and recipes”</li>
+      <li>“Ingredients are sometimes listed after instructions. Instructions can be long and difficult to keep looking back at”</li>
+      <li>“Directions and ingredients list are often far apart so I need to scroll to see how much of something is called for”</li>
+    </ul>
+    <h4>Scrolling</h4>
+    <ul class="quotes">
+      <li>“I have to scroll with wet food fingers”</li>
+      <li>“Scrolling to find the recipe beyond the blogging article is annoying”</li>
+    </ul>
+    <h4>Substitutions</h4>
+    <ul class="quotes">
+      <li>“I often want to know how to substitute”</li>
+      <li>“Too many niche ingredients”</li>
+      <li>“I don’t have all of the ingredients for recipes I find”</li>
+    </ul>
+    <h4>Unlocking</h4>
+    <ul class="quotes">
+      <li>“I have to keep opening my phone for every step”</li>
+      <li>“Phone locks during cooking”</li>
+      <li>“My phone locks while trying to cook and my hands are messy, hence why I like my laptop better”</li>
+    </ul>
+    <h3>Constraints</h3>
+    <img class="fit-width" src="./images/projects/sous-chef/Survey-Data.png" alt="">
+    <p>While the survey validated the need for the solution, it also highlighted that my initial idea was prioritizing the wrong solution. Mobile web accounted for a huge chunk of device usage while following on a device. With only 8% of people
+      having multiple cooking apps, it became apparent that I can reach a bigger audience by focusing on a web-based solution. Though unlocking a device during cooking was a common pain point among survey participants, lock screen access would
+      require a native app. Because the survey demonstrated limited usage of mobile apps, I will not be prioritizing a lock screen solution. With that said, I believe it can provide value, and will revisit it later.</p>
+
+    <h3>Scenarios</h3>
+    <p>I used scenarios to visualize the biggest pain points described in survey responses.</p>
+    <img class="almost-full-width" src="./images/projects/sous-chef/Sous-Chef-Pre-Cooking-Scenario.jpg" alt="">
+    <p>People browse recipes from an assortment of places, often comparing recipes against one another. There are plenty of websites dedicated to browsing recipes. I will focus on reducing friction while cooking for the scope of this project. The key takeaway from this scenario is the user’s frustration identifying and saving a recipe for later.</p>
+    <img class="almost-full-width" src="./images/projects/sous-chef/Sous-Chef-Cooking-Scenario.jpg" alt="">
+    <p>Scrolling with dirty hands, poor layout, and difficulty making substitutions were common frustrations of survey participants.</p>
+
+    <h2>Design</h2>
+    <p>I started designing with a focus on three opportunity areas: saving recipes for later, recipe layout, and ingredient substitutions.</p>
+    <img class="almost-full-width" src="./images/projects/sous-chef/User-Flow.png" alt="">
+    <p>After bringing on Steven for development, we looked for leverageable resources. <a href="https://spoonacular.com/food-api/docs">Spoonacular API</a> was a great fit with a database of recipes as well as other features we highlighted as opportunity areas. With the API in tow, we determined our easiest path for a MVP of the website, and built a prototype to guide development. </p>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIkdkChnMQMYOUuPu6qeiEk%2FSous-Chef%3Fnode-id%3D140%253A628%26viewport%3D3136%252C-3773%252C0.35429608821868896%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+    <h2>Status</h2>
+    <ul class=bullets>
+      <li>Identified the core experience to represent in the MVP: categorized steps with a list of the ingredients and their measurements, along with controls that are easy to use while cooking.</li>
+      <li>Shifting situations during COVID-19 put the project on pause. The MVP is back under development.</li>
+    </ul>
   </div>
 </body>
 <footer>

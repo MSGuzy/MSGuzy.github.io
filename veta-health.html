@@ -15,41 +15,77 @@
 
 <body>
   <div class="section highlight">
-    <div class="inner-container">
+    <div class="wrapper">
       <h1>Veta Health</h1>
-      <div id="intro-box">
+      <div class="two-column-grid" id="intro-box">
         <div id="objective-box">
-          <h2>Objective/Goals</h2>
-          <p>Project goals go here</p>
+          <h2>Objective</h2>
+          <p>Helps patients requiring continuous care manage their health after leaving direct care.</p>
         </div>
         <div id="team-box">
           <h2>Team</h2>
           <ul>
-            <li><b>Matt Guzy:</b> Role | Role 2</li>
-            <li><b>Name 2:</b> Role</li>
-            <li><b>Name 3:</b> Role</li>
-            <li><b>Name 4:</b> Role | Role 2</li>
+            <li><b>Matt Guzy:</b> Design | Research</li>
+            <li><b>Dr. Nora Zetsche:</b> Manager | Co-Founder</li>
+            <li><b>Marcelo Paiva:</b> Design Lead (Contract)</li>
             <ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="section">
-    <div class="inner-container">
-      <h2>Process</h2>
-      <h3>Research</h3>
-      <p>Research information</p>
-      <h3>Design</h3>
-      <p>Design information</p>
-      <h3>Testing</h3>
-      <p>Testing information</p>
-      <h2>Outcomes</h2>
-      <ul class=bullets>
-        <li>Outcome 1</li>
-        <li>Outcome 2</li>
-        <li>Outcome 3</li>
-      </ul>
-    </div>
+  <div class="wrapper">
+    <p>Patients use the mobile app to track their health journey. If anything irregular is reported, care providers are notified via the web app so
+      the issue can be addressed as soon as possible.</p>
+
+    <h2>Vitals Data Visualization</h2>
+    <p>Recording and tracking vitals is integral to the platform. This data needs to be visualized for both our distinct user bases. To reduce development costs, we utilized the same visualization on both platforms. This provided a unique challenge,
+      as the same data visualization needed to be easily understandable by novice (patients) users, while also providing value to our expert (care providers) users.</p>
+    <p>We conducted usability testing with users in both categories. Medical professionals were much faster to figure out the graphs, while patients needed time to understand the information.</p>
+    <p>In addition to recent vital readings, we wanted to showcase target values. The initial designs visually represented warning and critical breakpoints with faded lines. Confusion behind their meaning along with poor contrast caused issues with
+      users.</p>
+    <img class="fit-width" src="./images/projects/veta-health/Initial.png" alt="initial vital graphs">
+    <p>Blood pressure was particularly difficult because it is expressed as the combination of its two values: systolic and diastolic. Each of these values has its own target values. While medical professionals are familiar with this, patients often
+      did not have a clear understanding prior to exposure with our graphs.</p>
+    <p>To solve these issues, we switched to highlighting the entire area of healthy values. We added a legend, including the value ranges. After hearing feedback, we realized we needed to adjust our color scheme to be color blind friendly.</p>
+    <img class="fit-width" src="./images/projects/veta-health/Final.png" alt="revised vital graphs">
+
+    <h2>Patient Summary Reports</h2>
+    <p>Care providers on Veta Health’s platform needed the ability to view summarized information, for both individual patients and groups of patients suffering from the same conditions. Unlike the data visualization project, these reports are
+      catered exclusively to the care provider side; therefore, we were designing for an expert audience.</p>
+    <figure class="almost-full-width">
+      <img src="./images/projects/veta-health/Reports-Sketches.jpg">
+      <figcaption>Flow, Layout, and Graph Sketches</figcaption>
+    </figure>
+    <figure class="almost-full-width">
+      <img src="./images/projects/veta-health/Patient-Iterations.jpg">
+      <figcaption>individual Patient Report Iterations</figcaption>
+    </figure>
+    <figure class="almost-full-width">
+      <img src="./images/projects/veta-health/Care-Plan-Iterations.jpg">
+      <figcaption>Patient Group Report Iterations</figcaption>
+    </figure>
+    <p>Through our original conversations with users, we learned that care providers often print graphs, which we accounted for in the data visualization designs. However, while observing care providers, we noticed the majority printed charts in
+      black and white. In order to create an ideal experience for both web and print, we needed to create different color schemes for each.</p>
+    <h3>Web</h3>
+    <p>Graphs utilize stoplight colors when there are clear positive, neutral, and negative data points. For non-categorizable and larger data sets, we needed something different. It should visually match the Veta Health platform, while also being
+      easily readable for everyone, including color blind users. We defined our edge case as a maximum of 7 items per graph, so we needed a flexible set of 7 colors. Experimentation led to a set based on breakpoints of a gradient of the brand and
+      interface colors. The flexible system prioritizes readability, utilizing the most distinguishable set of colors at each data point count. Below are variations of the prioritization in the 5 and 6 color sets. The middle option was the final
+      selected set.</p>
+    <img class="fit-width" src="./images/projects/veta-health/Color-Scales.png" alt="Standard color sets">
+    <img class="fit-width" src="./images/projects/veta-health/Color-Scales-Black-and-White.png" alt="Color sets for color-blind users">
+    <h3>Print</h3>
+    <p>Having a set of 7 shades of gray was nearly indistinguishable. Further exploration and ideation produced our solution: pattern fills. Focusing on black and white readability, iterative testing helped us identify specific patterns to use.</p>
+    <p>We then narrowed down the patterns to a set of 7 easily distinguishable patterns. After plugging them into a graph, we realized having 7 patterns was quite overwhelming. To combat this, we defined a set of 3 shades of gray to use in
+      conjunction with 4 patterns. Shades of gray are prioritized over patterns to minimize patterns usage.</p>
+    <img class="fit-width" src="./images/projects/veta-health/Patterns-Iterations.gif" alt="Patterns for printing charts">
+    <p>We then narrowed down the patterns to a set of 7 easily distinguishable patterns. After plugging them into a graph, we realized having 7 patterns was quite overwhelming. To combat this, we defined a set of 3 shades of gray to use in
+      conjunction with 4 patterns. Shades of gray are prioritized over patterns to minimize patterns usage.</p>
+    <!-- <h3>Takeaways</h3>
+    <ul class=bullets>
+      <li>While creating the patterns, I learned the value of designing in context. I attempted to create enough patterns to work for all 7 items, but it wasn't until plugging it into the charts that we realized we were better off using a combination
+        of shades of gray and patterns.</li>
+      <li>Gradients work well on charts for color-blind users.</li>
+    </ul> -->
   </div>
 </body>
 <footer>
