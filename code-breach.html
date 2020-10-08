@@ -43,41 +43,49 @@
       <p>If it is only my fiancée and I playing a game, it is usually towards the end of a night with only time for a short game. She suffers from an ailment common among board game fans — analysis paralysis (AP), or overthinking to the point
         of stalling games. We often turn to co-operative games, which alleviate the problem as I can help with decision making if she gets stuck. With that in mind, I set out to create a quick
         two-player competitive game, that minimizes AP without sacrificing strategic choices and interesting decisions.</p>
-      <p>AP occurs most often when players have the ability to think multiple turns ahead.In an attempt to produce the best possible strategy and moves, players cycle through all possible options. This can easily get out of hand. A major design goal
-        is to minimize the need to think multiple moves ahead. Choices need to have value, but shouldn’t rely on chaining together to maximize effeciency.</p>
+      <p>AP occurs most often when players have the ability to think multiple turns ahead. Players cycle through all options, in an attempt to produce the best possible strategy. This can greatly elongate the game. In order to minimize the need to
+        think multiple moves ahead, choices should have value without requiring planning.</p>
 
       <h3>Core Gameplay Loop</h3>
-      <p>The basic idea for the game came from the pop-culture image of hackers and hack-a-thons. It is a race to hack into your opponent's computer and find their location. In the game, this is done by rolling dice, playing them on one of your
-        opponents slots (cards), and getting an approximation from your opponent. Your opponent gives approximations by stating if your roll is "higher", "lower", or a "hit" on the slot.</p>
-      <p>The initial few playtests, tracking was done by memory. While the basic gameplay loop was enjoyable, memory is not a mechanic that we usually like it and this game was not an exception. Giving players a paper and pencil help to solve the
+      <p>The basic idea for the game came from the pop-culture image of hackers and hack-a-thons. It is a race to hack into your opponent's computer and find their location. In the game, this is done by rolling dice and playing them on one of your
+        opponent's slots (cards). Your opponent then gives approximations by stating if your rolls are "higher", "lower", or a "hit" on the slot.</p>
+      <p>In the initial few playtests, tracking was done by memory. While the basic gameplay loop was enjoyable, memory is not a mechanic that we usually like it and this game followed that pattern. Giving players a paper and pencil helped to solve
+        the
         memory problem, but made the game feel slow. Designing an interface to keep track of the information became a key part of the design problem.</p>
+
       <h4>Tracking Information</h4>
-      <p>One of the first interfaces stood out amongst the group: a two-level number track for each card. After playing a few games with it, I was comfortable that we could focus on interate and continue to improve that design to find our end
-        solution.</p>
-      <img class="almost-full-width" src="/images/projects/code-breach/tracker-iterations.jpg" alt="Tracker Iterations">
+      <p>One of the first interfaces stood out amongst the group: a two-level number track for each card. After playing a few games with it, I was comfortable that we could focus on and iterate the design to find our end solution.</p>
+      <img class="almost-full-width" src="/Images/projects/code-breach/tracker-iterations.jpg" alt="Tracker Iterations">
       <p>The first version didn't have a cover. The second version became a little cumbersome to reach the card, so the third version added a card holder. Any slight movement made the card fall, and it was unable to hold a card sturdy enough facing
         both directions.</p>
-      <img class="almost-full-width" src="/images/projects/code-breach/current-tracker.jpg" alt="Current tracker which can hold card">
+      <img class="almost-full-width" src="/Images/projects/code-breach/current-tracker.jpg" alt="Current tracker which can hold card">
       <p>The current tracker is sturdy enough to hold the card facing either way in place while the user moves the cubes.</p>
 
       <h3>Programs</h3>
       <p>The early gameplays focused on refining the basic gameplay loop, which held up on repeated plays. However, the game felt basic and needed another element to keep in interesting.</p>
-      <p>One of my favorite game mechanics is dice mitigation, which gives you the ability to affect the value you roll. It's a great way to balance luck and strategy. Adding this mechanic via programs, or special powers/abilities, seemed like a great avenue to explore.
-  <img class="almost-full-width" src="/images/projects/code-breach/first-powers.jpg" alt="Some of the initial powers">
-        After testing a few basic programs, the game started to come alive. One power stood above the rest and found it's way into the core gameplay loop; the ability to <i>Scramble</i> a card and replace it with a new one added an element of strategy that we couldn't play without.</p>
-      <img class="almost-full-width" src="/images/projects/code-breach/brainstorming.jpg" alt="Brainstormed ideas on Post-it Notes">
+      <p>One of my favorite game mechanics is dice mitigation, which gives you the ability to affect the value you roll. It's a great way to balance luck and strategy. Adding this mechanic via programs, or special powers/abilities, seemed like a
+        great avenue to explore.</p>
+      <img class="almost-full-width" src="/Images/projects/code-breach/first-powers.jpg" alt="Some of the initial powers">
+      <p>After testing a few basic programs, the game started to come alive. One power stood above the rest and found its way into the core gameplay loop; the ability to <i>Scramble</i> a card and replace it with a new one added an element of
+        strategy that we couldn't play without.</p>
+      <img class="almost-full-width" src="/Images/projects/code-breach/brainstorming.jpg" alt="Brainstormed ideas on Post-it Notes">
       <p>As more ideas formed around programs, this ever-evolving Post-It wall became a checklist for future playtests. Two primary decision spaces emerged around programs: are they purchased or shared, and how to balance power-levels.</p>
       <p>Purchased vs shared market is still being tested. Both have shown advantages and disadvantages.</p>
-      <p>Having multiple ways to balance powers gives more control that can be used to fine tune power-levels. An initial cost and cooldown on use greated easily adjustable ways to equalize powers. You sacrifice dice to buy powers, but cooldowns provided a new challenge; how to track them without adding fiddlyness. Utilizing the backs of the programs to track cooldowns worked well without adding any components.</p>
-      <img class="almost-full-width" src="/images/projects/code-breach/refined-powers.jpg" alt="Updated power cards with cooldown trackers on backs">
+      <p>Having multiple ways to balance programs gives more control that can be used to fine tune power-levels. An initial cost and cooldown on use created easily adjustable ways to equalize programs. You sacrifice dice to buy programs, but cooldowns
+        provided a new challenge: how to track them without adding fiddliness. Utilizing the backs of the programs to track cooldowns worked well without adding any components.</p>
+      <img class="almost-full-width" src="/Images/projects/code-breach/refined-powers.jpg" alt="Updated power cards with cooldown trackers on backs">
 
       <h2>Playtesting</h2>
       <p>While my fiancée and family are great playtesters, I eventually needed to venture outside of that bubble and let others play the game. During a pandemic, that became very difficult to accomplish.</p>
+
       <h3>Tabletop Simulator</h3>
       <iframe width="100%" height="500px" src="https://www.youtube.com/embed/DFBNNBdBQa8?autoplay=1&loop=1&controls=0&mute=1&playlist=DFBNNBdBQa8&modestbranding=1&showinfo=0" frameborder="0"></iframe>
+
       <h3>Print 'n Play</h3>
-      <p>In order to reach out to those who don't enjoy playing virtual board games, I have started creating a Print 'n Play (PnP) version. Most of the components can be borrowed from other games or substituted with an equivalent found around your house,
-        so it seems like a great candidate. Because I won't be present for PnP games, well-written rules are imperative for success. <a target="_blank" href="https://docs.google.com/document/d/1f_uM5JgZdT1qVayLlMe4Lq5AI2QWUa8Ov0iW8D_EnRc/edit?usp=sharing">Current Rules Draft</a></p>
+      <p>In order to reach out to those who don't enjoy playing virtual board games, I have started creating a Print 'n Play (PnP) version. Most of the components can be borrowed from other games or substituted with an equivalent found around your
+        house,
+        so it seems like a great candidate. Because I won't be present for PnP games, well-written rules are imperative for success. <a target="_blank"
+          href="https://docs.google.com/document/d/1f_uM5JgZdT1qVayLlMe4Lq5AI2QWUa8Ov0iW8D_EnRc/edit?usp=sharing">Current Rules Draft</a></p>
 
       <h2>Status</h2>
       <ul class=bullets>
