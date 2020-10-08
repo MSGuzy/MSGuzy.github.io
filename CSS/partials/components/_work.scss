@@ -16,7 +16,7 @@
   max-width: $content-width;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  padding: 0 2em;
+  padding: 4em 2em;
 
   @media screen and (min-width: 50em) {
     grid-template-columns: 1fr 1fr;

@@ -18,7 +18,7 @@ body {
   flex-flow: column;
   justify-content: flex-start;
   align-self: center;
-  padding: 1em 2em;
+  padding: 4em 2em;
   margin-bottom: 0.5em; }
 
 .wrapper {
@@ -55,12 +55,12 @@ figure img {
 figcaption {
   text-align: center; }
 
-#about h1 {
+.highlight h1 {
   font-weight: 300;
   line-height: 90%;
   margin-bottom: 0.5em;
   display: block; }
-  #about h1 b {
+  .highlight h1 b {
     font-weight: 700; }
 
 .flex-row {
@@ -117,7 +117,7 @@ h6 {
   padding: 0; }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 3.5rem;
   margin-bottom: 0em;
   font-weight: 300;
   line-height: 100%; }
@@ -878,7 +878,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 1em;
-  margin-bottom: 1.5em; }
+  margin: 2em 0em 2.5em; }
 
 #footer {
   display: flex;
@@ -893,7 +893,7 @@ footer {
 .social-icons a {
   -webkit-filter: contrast(0);
           filter: contrast(0);
-  margin-left: 0.5em; }
+  margin-left: 2em; }
 
 .social-icons a:hover {
   transition: 0.3s all;
@@ -901,23 +901,23 @@ footer {
           filter: contrast(1); }
 
 #email {
-  height: 1.5em;
-  width: 1.5em; }
+  height: 2em;
+  width: 2em; }
 
 #twitter {
-  height: 1.5em;
-  width: 1.5em; }
+  height: 2em;
+  width: 2em; }
 
 #linkedin {
-  height: 1em;
+  height: 1.5em;
   margin: 0; }
 
 #dribbble {
-  height: 1em;
-  width: 1em; }
+  height: 1.5em;
+  width: 1.5em; }
 
 .divider {
-  margin: 0 1em; }
+  margin: 0 4em; }
 
 @media screen and (min-width: 50em) {
   .coded {
@@ -946,7 +946,7 @@ footer {
   max-width: 1200px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  padding: 0 2em; }
+  padding: 4em 2em; }
   @media screen and (min-width: 50em) {
     .work-container {
       grid-template-columns: 1fr 1fr;

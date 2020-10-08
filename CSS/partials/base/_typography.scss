@@ -15,7 +15,7 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size * ($font-scale * 3);
+  font-size: $font-size * ($font-scale * 2.5);
   margin-bottom: 0em;
   font-weight: map-get($font-weights, light);
   line-height: 100%;

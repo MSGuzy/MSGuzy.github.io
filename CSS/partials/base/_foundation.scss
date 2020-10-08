@@ -19,7 +19,7 @@ body {
   justify-content: flex-start;
   align-self: center;
   // @media screen and (max-width: $content-width + ($global-margin * 2)) {
-     padding: 1em 2em;
+     padding: 4em 2em;
   // }
 
   margin-bottom: 0.5em;
@@ -75,7 +75,7 @@ figcaption {
   text-align: center;
 }
 
-#about h1 {
+.highlight h1 {
   font-weight: 300;
   line-height: 90%;
   margin-bottom: 0.5em;
