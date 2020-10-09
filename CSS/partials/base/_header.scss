@@ -48,6 +48,7 @@ body {
 }
 
 .responsive-logo {
+  text-decoration: none;
   @media screen and (max-width: 55em) {
     justify-content: center;
     flex-direction: column;
